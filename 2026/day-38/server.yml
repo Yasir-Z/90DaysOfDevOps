@@ -1,0 +1,12 @@
+# Task 3: Nested Objects
+server:
+  name: ubuntu-server
+  ip: 192.168.0.1
+  port: 80
+database:
+  host: db
+  name: app_db
+  credentials:
+    name: root
+    password: root
+  
