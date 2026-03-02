@@ -1,4 +1,4 @@
-# Task 3: Nested Objects
+---
 server:
   name: ubuntu-server
   ip: 192.168.0.1
@@ -9,4 +9,18 @@ database:
   credentials:
     name: root
     password: root
-  
+server2:
+  name: ubuntu-server
+  ip: 192.168.0.1
+  port: 80
+  startup_script: |
+    apt-get update
+    app-get install nginx
+db:
+  host: db
+  name: app_db
+  credentials:
+    name: root
+    password: root
+  statement: |
+    Learning dveops is a quite interesting journey !
