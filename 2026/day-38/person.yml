@@ -1,5 +1,17 @@
+# Task 1,2: Key-Value Pairs
 person:
   name: Yasir
   role: Devops_learner
   experience_years: 1
   learning: true
+  tools:
+    - Git & Github
+    - Github Actions
+    - Docker 
+    - Jira
+    - Jenkins
+  hobbies:
+    - Running
+    - Reading Books
+    - Plying Volleyball
+  
