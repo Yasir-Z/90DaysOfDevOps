@@ -17,4 +17,21 @@
 
 <img width="1867" height="482" alt="image" src="https://github.com/user-attachments/assets/fb5d5258-96ba-4c2c-aa23-c50fc294d5d3" />
 
+### Task 4: Matrix Builds
+
+<img width="1010" height="796" alt="image" src="https://github.com/user-attachments/assets/ead20075-d06e-4e5e-97cd-bf3533571ce6" />
+
+<img width="1502" height="764" alt="image" src="https://github.com/user-attachments/assets/fe5c139e-6358-4399-a8b7-78eba0e9d3cf" />
+
+### Task 5: Exclude & Fail-Fast
+
+<img width="1082" height="821" alt="image" src="https://github.com/user-attachments/assets/f78fd5c8-1948-4e53-9a8a-7034b60757a6" />
+
+<img width="1348" height="560" alt="image" src="https://github.com/user-attachments/assets/7b7f42d4-06cb-4134-b13c-178a4909cb94" />
+
+## fail-fast: true --> if the any of the jobs is failed github send signal to all other jobs to stop 
+## fail-fast: false --> even if some job is failed github will running all other jobs untill they are completed
+
+
+
 
