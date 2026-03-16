@@ -12,6 +12,8 @@ so it was named as kubernete (Helmsman).
 ### Architecture Diagrame
 
 
+### Screenshot of kubectl get nodes and kubectl get pods -n kube-system
+
 
 
 ### Which tool you chose (kind/minikube) and why
