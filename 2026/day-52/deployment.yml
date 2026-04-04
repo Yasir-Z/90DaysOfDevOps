@@ -1,22 +1,21 @@
-kind: Deployment
-apiVersion: apps/v1
-metadata:
-  name: nginx-deployment
-  namespace: dev
-  labels:
-    app: nginx
-spec:
-  replicas: 5
-  selector:
-    matchLabels:
-      app: nginx
-  template:
-    metadata:
-      labels:
-        app: nginx  
-    spec:
-      containers:
-        - name: nginx-container
-          image: nginx:1.24
-          ports:
-            - containerPort: 80
+apiVersion: apps/v1           # Kubernetes api version for the resources
+kind: Deployment              # Type of resources need to be created
+metadata:                     # identifier of resources 
+  name: nginx-deployment      # name of the resources
+  labels:                     # Labels for selecting resource 
+    app: nginx                # label for identification of resource
+spec:                         # specification of desired state - used for autoscaling  
+  replicas: 3                 # Number of replicases to be maintained
+  selector:                   # this selector is a method for deployment to find which pod to manage
+    matchLabels:              # identification labels for pods 
+      app: nginx              # Pod lebel for deployment to manage
+  template:                   # for types of pods to be maintained
+    metadata:                 # identifier for pod
+      labels:                 # lable for pod
+        app: nginx            # identifier for pod
+    spec:                     # specification of pod 
+      containers:             # List of containers inside the pod
+      - name: nginx           # name of the container 
+        image: nginx:1.14.2   # docker image of container
+        ports:                # ports selector
+        - containerPort: 80   # port to be exposed
