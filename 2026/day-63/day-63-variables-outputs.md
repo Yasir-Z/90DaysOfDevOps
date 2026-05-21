@@ -19,7 +19,7 @@ priority 5: default (Whatever is inside the variable block)
 
 
 ## The difference between variable, local, output, and data
-variable: values we provide inside the code in order to avoid hard coding ususally from outside the code file 
-local: valuse we use to avoid hard coding from inside the code file 
-output: used to obtain valuse from inside the code in output 
-data: data block used to fetch existing cloud resources
+- variable: values we provide inside the code in order to avoid hard coding ususally from outside the code file 
+- local: valuse we use to avoid hard coding from inside the code file 
+- output: used to obtain valuse from inside the code in output 
+- data: data block used to fetch existing cloud resources
