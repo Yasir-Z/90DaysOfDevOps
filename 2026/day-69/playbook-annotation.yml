@@ -1,0 +1,26 @@
+- name: nginx playbook
+  hosts: web
+  become: true 
+
+  tasks:
+    - name: update all packages
+      apt:
+        name: "*"
+        state: latest
+
+    - name: install nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: start and enable nginx
+      service:
+        name: nginx
+        state: started
+        enabled: true
+
+    - name: Create a custom index page
+      copy:
+        content: "<h1>Deployed by Ansible - TerraWeek Server</h1>"
+        dest: /usr/share/nginx/html/index.html
